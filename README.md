@@ -16,6 +16,14 @@ A plugin for OBS Studio that gives an audible notification when the replay buffe
 * PortAudio (managing audio streams)
 * tinycthread (probably header-only; Windows-only dependency due to Microsoft not implementing C11's `<thread.h>`)
 
+## Building
+
+Provide all of the build dependencies listed above (as well as `libobs` to be both  included and linked against) and then use CMake to compile the plugin.
+
+## Installation
+
+Take a look [here](HOW_TO_INSTALL_BUILD.md).
+
 ## Todo
 
 * Test playback with different hardware setups
