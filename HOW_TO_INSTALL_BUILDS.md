@@ -22,7 +22,7 @@ For Windows, those dependencies need to be placed in the OBS executable's direct
 
 # Bundled build
 
-This message comes with a bundled 64-bit Windows build inside the `build_x64.7z` archive.
+This repo comes with a bundled 64-bit Windows build inside the `Releases` section.
 It contains the plugin, the playback service and the dependencies as well.
 
 `obs-replaybuffer-notification.dll` is the OBS plugin and should go to the plugins folder as described above.
