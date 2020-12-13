@@ -22,7 +22,7 @@ Provide all of the build dependencies listed above (as well as `libobs` to be bo
 
 ## Installation
 
-Take a look [here](HOW_TO_INSTALL_BUILD.md).
+Take a look [here](HOW_TO_INSTALL_BUILDS.md).
 
 ## Todo
 
