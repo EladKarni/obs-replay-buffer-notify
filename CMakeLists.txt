@@ -25,7 +25,7 @@ if(NOT DEFINED PORTAUDIO_FOUND)
     message(FATAL_ERROR "Could not find the PortAudio library. The Big Boss has to manually take care of this.")
 endif()
 
-find_package(LibObs REQUIRED)
+find_package(libobs REQUIRED)
 find_package(Threads REQUIRED)
 #find_package(cpptoml REQUIRED) vcpkg doesn't register cpptoml as CMake package. This is to avoid issues.
 find_package(SFML 2.5 COMPONENTS audio REQUIRED)
