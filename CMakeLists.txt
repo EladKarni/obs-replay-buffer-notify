@@ -29,7 +29,7 @@ find_package(LibObs REQUIRED)
 find_package(Threads REQUIRED)
 #find_package(cpptoml REQUIRED) vcpkg doesn't register cpptoml as CMake package. This is to avoid issues.
 find_package(SFML 2.5 COMPONENTS audio REQUIRED)
-find_package(Qt5 REQUIRED COMPONENTS Core)
+find_package(Qt6 REQUIRED COMPONENTS Core)
 
 configure_file(
     src/plugin-macros.h.in
@@ -65,7 +65,7 @@ add_executable(obs_notification_service
 
 include_directories(
 	"${LIBOBS_INCLUDE_DIR}/../UI/obs-frontend-api"
-    ${Qt5Core_INCLUDES}
+    ${Qt6Core_INCLUDES}
     ${CPPTOML_INCLUDE_DIR}
     ${PORTAUDIO_INCLUDE_DIRS}
     ${SFML_INCLUDE_DIR}
@@ -73,11 +73,11 @@ include_directories(
 
 target_link_libraries(${CMAKE_PROJECT_NAME}
     libobs
-	Qt5::Core
+	Qt6::Core
 )
 
 target_link_libraries(obs_notification_service
-    Qt5::Core
+    Qt6::Core
     portaudio
     sfml-audio
     Threads::Threads
